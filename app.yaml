@@ -1,0 +1,13 @@
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+application: app_id
+
+handlers:
+- url: /.*
+  script: helloworld.app
+
+libraries:
+- name: ssl
+  version: latest
